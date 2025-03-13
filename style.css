@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: transparent !important;
+    overflow: auto;
+    color: #e0e0e0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0px 20px;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 2rem;
+    background: linear-gradient(45deg, rgba(67, 56, 202, 0.5), rgba(79, 70, 229, 0.5));
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #8b9af5;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.policy-section {
+    background: rgba(45, 45, 45, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(106, 90, 205, 0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.policy-section p {
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+.policy-section ul {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+.policy-section li {
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.policy-section h2 {
+    color: #8b9af5;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(106, 90, 205, 0.5);
+    font-size: 1.8rem;
+}
+
+.policy-section h3 {
+    color: #a5b4fc;
+    margin: 20px 0 15px;
+    font-size: 1.3rem;
+}
+
+.definition-list {
+    background: rgba(51, 51, 51, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 1px solid rgba(106, 90, 205, 0.2);
+}
+
+.definition-list dt {
+    font-weight: 600;
+    color: #b4c7dc;
+    margin-bottom: 8px;
+}
+
+.definition-list dd {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    color: #a0a0a0;
+}
+
+.footer {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+    border-top: 1px solid rgba(106, 90, 205, 0.2);
+    background: linear-gradient(45deg, rgba(67, 56, 202, 0.1), rgba(79, 70, 229, 0.1));
+}
+
+a {
+    color: #8b9af5;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #667eea;
+    text-decoration: underline;
+}
+
+.material-icons {
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #8b9af5;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
+}
+
+.policy-section h2 .material-icons {
+    font-size: 2rem;
+    vertical-align: top;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: min(90vw, 800px);
+    height: auto;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+}
+
+
+
