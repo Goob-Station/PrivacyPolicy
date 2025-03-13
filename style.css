@@ -34,6 +34,20 @@ body {
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
+.gdpr {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0.5rem;
+    background: linear-gradient(45deg, rgba(67, 56, 202, 0.5), rgba(79, 70, 229, 0.5));
+    border-radius: 10px;
+}
+
+.gdpr h1 {
+    font-size: 2rem;
+    color: #8b9af5;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
 .policy-section {
     background: rgba(45, 45, 45, 0.7);
     padding: 30px;
