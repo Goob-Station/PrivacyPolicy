@@ -139,12 +139,17 @@ class ParallaxManager {
 
     drawImageLayer(layer) {
         if (!this.imageLoaded) return;
-        
-        const offset = (this.time * layer.speed) % layer.image.width;
+
+        const imgAspect = layer.image.width / layer.image.height;
+        const canvasHeight = this.canvas.height;
+        const scaledWidth = canvasHeight * imgAspect;
+        const scaledHeight = canvasHeight;
+
+        const offset = (this.time * layer.speed) % scaledWidth;
         this.ctx.save();
         this.ctx.globalAlpha = 0.8;
-        this.ctx.drawImage(layer.image, -offset, 0);
-        this.ctx.drawImage(layer.image, layer.image.width - offset, 0);
+        this.ctx.drawImage(layer.image, -offset, 0, scaledWidth, scaledHeight);
+        this.ctx.drawImage(layer.image, scaledWidth - offset, 0, scaledWidth, scaledHeight);
         this.ctx.restore();
     }
 
