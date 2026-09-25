@@ -17,16 +17,16 @@
     <script src="parallax.js"></script>
     <div class="container">
         <div class="logo-container">
-            <img src="https://raw.githubusercontent.com/Goob-Station/Goob-Station/dc3fdca5da6df6fd6a9911711c8117b8500a327e/Resources/Textures/Logo/logo.svg" 
-                    alt="Goob Station Logo" 
+            <img src="https://raw.githubusercontent.com/Goob-Station/Goob-Station/dc3fdca5da6df6fd6a9911711c8117b8500a327e/Resources/Textures/Logo/logo.svg"
+                    alt="Goob Station Logo"
                     class="logo">
         </div>
 
         <div class="header">
             <h1>Game Server Privacy Policy</h1>
-                <strong>Last Updated: December 25th, 2025</strong>
+                <strong>Last Updated: September 24th, 2026</strong>
                 <br>
-                Added Data Retention section, expanded Lawful Basis for Processing, clarified limitations on data erasure requests, and updated Data Transfers and Security Incidents sections for GDPR compliance.
+                Added a Voice Chat section covering voice recording, access, and retention, and updated Definitions, Data We Collect, Data Access, Lawful Basis for Processing, Data Transfers, and Data Retention to include voice chat.
         </div>
 
 
@@ -35,16 +35,16 @@
             <dl class="definition-list">
                 <dt>Redialing</dt>
                 <dd>Automatic reconnection process through the game's launcher to alternative servers</dd>
-                
+
                 <dt>IP Address</dt>
                 <dd>Numerical label assigned to your device when connected to a network</dd>
-                
+
                 <dt>UUID (Universal Unique Identifier)</dt>
                 <dd>128-bit number used to uniquely identify your game account</dd>
-                
+
                 <dt>HWID (Hardware ID)</dt>
                 <dd>Hashed identifier generated from your device's hardware configuration</dd>
-                
+
                 <dt>VPN (Virtual Private Network)</dt>
                 <dd>Service that masks your real IP address and location</dd>
 
@@ -53,9 +53,15 @@
 
                 <dt>Network Operators</dt>
                 <dd>Technical personnel maintaining server infrastructure</dd>
-                
+
                 <dt>Server Hosts</dt>
                 <dd>Third-party companies providing physical server hardware and network connectivity</dd>
+
+                <dt>Voice Page</dt>
+                <dd>The web page, opened in your browser from inside the game, that captures your microphone for in-game voice chat</dd>
+
+                <dt>Round</dt>
+                <dd>A single game session on a server, from when it starts until the server resets for the next one</dd>
             </dl>
         </div>
 
@@ -66,6 +72,7 @@
                 <li>Hardware ID (HWID)</li>
                 <li>Account UUID and username</li>
                 <li>All in-game actions and communications</li>
+                <li>Voice chat audio and related information, if you use voice chat (see <a href="#voice-chat">Voice Chat</a>)</li>
                 <li>Explicitly entered user preferences</li>
                 <li>Discord user ID and roles (if you choose to link your Discord account)</li>
             </ul>
@@ -80,10 +87,11 @@
                 <ul class="access-details">
                     <li>Connection histories (IP/HWID/UUID)</li>
                     <li>In-game chat and game logs</li>
+                    <li>Voice chat recordings (administrators with log access only)</li>
                     <li>Moderation action records</li>
                 </ul>
             </ul>
-    
+
             <h4>Network Operators</h4>
             <ul>
                 <ul class="access-details">
@@ -91,10 +99,10 @@
                     <li>Raw database records</li>
                     <li>Unfiltered connection metadata</li>
                     <li>Server diagnostic streams</li>
-                    <li>Persistent storage archives</li>
+                    <li>Persistent storage archives, including stored voice chat recordings</li>
                 </ul>
             </ul>
-        
+
             <h3>External Services</h3>
             <h4>Server Hosts</h4>
             <ul>
@@ -102,7 +110,7 @@
                 <li><span class="access-type">Cannot view:</span> Decrypted game data, personal identifiers</li>
                 <li>Bound by data processing agreements (DPAs)</li>
             </ul>
-    
+
             <h4>Security Services (IPIntel)</h4>
             <ul>
                 <li><span class="access-type">Receives:</span> New connection IP addresses</li>
@@ -110,17 +118,57 @@
             </ul>
         </div>
 
-        
+        <div class="policy-section" id="voice-chat">
+            <h2>Voice Chat</h2>
+            <p>Voice chat is optional. To use it, you open our Voice Page in your web browser and allow it to use your microphone. If you do not want your voice recorded, you can play without using voice chat.</p>
+
+            <h3>What We Receive</h3>
+            <ul>
+                <li>The Voice Page only sends audio to our servers while push-to-talk is held, or while voice activation detects sound above your chosen sensitivity. It does not send audio at other times.</li>
+                <li>While you are speaking, your audio is delivered in real time to other players whose characters can hear you in-game, for example nearby characters, or players on a radio channel you are transmitting on.</li>
+            </ul>
+
+            <h3>What We Record</h3>
+            <ul>
+                <li>All voice chat audio your Voice Page sends to our servers is recorded, including audio sent while you are in the lobby, and audio sent while your character is unable to speak or while you are muted.</li>
+                <li>Your voice is recorded as captured, before any in-game voice effects (such as robotic, alien, or voice-changer effects) are applied.</li>
+                <li>Each recording is stored alongside the time, the round, your account username and UUID, your character's name, and how the audio was transmitted (for example local speech, a radio channel, a station-wide broadcast, or the lobby).</li>
+            </ul>
+
+            <h3>How Recordings Are Used</h3>
+            <ul>
+                <li>Investigating player reports and suspected rule violations</li>
+                <li>Moderation, rule enforcement, and handling appeals</li>
+                <li>We do not use voice recordings for voice recognition, biometric identification, profiling, or advertising</li>
+            </ul>
+
+            <h3>Who Can Access Recordings</h3>
+            <ul>
+                <li>Server Administrators with log access can play back recordings and see when, and how, players spoke during a round</li>
+                <li>Network Operators can access the stored recording files</li>
+                <li>Recordings are processed and stored only on our main game server in Germany. They are not shared with third-party services or transferred outside the EU.</li>
+                <li>Other players hear your voice live while you speak. We cannot control whether another player records audio on their own device.</li>
+            </ul>
+
+            <h3>Data Stored in Your Browser</h3>
+            <ul>
+                <li>The Voice Page saves your voice settings (such as input mode, sensitivity, and gain) and a temporary access code in your browser's local storage. This data stays on your device, and you can clear it at any time through your browser.</li>
+                <li>The access code links the Voice Page to your game session. On our servers it is held only in memory, and is discarded when the server restarts or a new link is issued.</li>
+                <li>Radio channels you choose not to hear are saved in your game client's settings on your device. Players you mute in-game are sent to the server so their audio is not delivered to you. This list is held only for your current connection.</li>
+            </ul>
+        </div>
+
+
         <div class="policy-section">
             <h2>Connection Management</h2>
-            
+
             <h3>VPN Detection</h3>
             <ul>
                 <li>New connections are checked via IPIntel service</li>
                 <li>VPN connections are blocked by default</li>
                 <li>Exemptions available through forum request</li>
             </ul>
-        
+
             <h3>Redialing Process</h3>
             <ul>
                 <li>Automatic server reconnection will:</li>
@@ -132,7 +180,7 @@
                 <li>No data is shared with third-party servers during redialing</li>
                 <li>Does not collect additional personal data</li>
             </ul>
-        
+
             <h3>Location Tracking</h3>
             <ul>
                 <li>Country data derived from IP addresses</li>
@@ -170,21 +218,23 @@
                 <li>Maintaining moderation history that remains necessary for enforcement or contextual review</li>
             </ul>
             <p>Character data and other non-essential gameplay data may be deleted by you at any time, as this data is not required for moderation or enforcement purposes.</p>
+            <p>Voice chat recordings are deleted automatically at the end of their retention period (see <a href="#data-retention">Data Retention</a>), so they are usually gone before an access or erasure request can be completed.</p>
         </div>
-        
+
         <div class="policy-section">
             <h2>Lawful Basis for Processing</h2>
             <p>Under GDPR, we process data based on:</p>
             <ul>
                 <li><strong>Contractual Necessity:</strong> Account data required to provide services</li>
-                <li><strong>Legitimate Interests:</strong> Security monitoring, fraud prevention, moderation, rule enforcement, maintaining moderation history, detecting repeat or escalating violations, preventing ban evasion, abuse investigation, and handling appeals. Retention of historical moderation records is necessary to ensure fair, consistent, and effective enforcement across our community.</li>
+                <li><strong>Legitimate Interests:</strong> Security monitoring, fraud prevention, moderation, rule enforcement, maintaining moderation history, detecting repeat or escalating violations, preventing ban evasion, abuse investigation, and handling appeals. This includes recording voice chat so that reports of abuse, harassment, or rule violations over voice can be reviewed, since spoken communication otherwise leaves no record. Retention of historical moderation records is necessary to ensure fair, consistent, and effective enforcement across our community.</li>
                 <li><strong>Consent:</strong> Optional features like Discord integration</li>
             </ul>
         </div>
 
         <div class="policy-section">
             <h2>Data Transfers</h2>
-            <p>Data may be transferred outside the EU to:</p>
+            <p>Our main game server, which also hosts voice chat, is located in Germany, within the EU. Voice chat recordings are stored there and are not transferred outside the EU.</p>
+            <p>Other data may be transferred outside the EU to:</p>
             <ul>
                 <li>Our hosting providers in the United States</li>
                 <li>Third-party services like Discord and IPIntel</li>
@@ -196,11 +246,12 @@
             </ul>
         </div>
 
-        <div class="policy-section">
+        <div class="policy-section" id="data-retention">
             <h2>Data Retention</h2>
             <p>We retain different types of data for different purposes:</p>
             <ul>
                 <li><strong>Gameplay and chat logs:</strong> Retained for up to 30 days to support moderation review and incident investigation. Logs are automatically deleted after this period unless they are part of an active moderation case.</li>
+                <li><strong>Voice chat recordings:</strong> Kept on the game server for the three most recent rounds, and automatically deleted when a newer round begins, which is typically within hours. Recordings needed as evidence in an active moderation case may be kept until that case is resolved.</li>
                 <li><strong>Moderation records:</strong> Records such as bans, warnings, and administrative notes are retained as long as they are necessary for moderation, rule enforcement, abuse prevention, and maintaining the integrity of the service. This includes historical records of previous bans and warnings, which help moderators understand patterns of behavior and ensure consistent enforcement.</li>
                 <li><strong>Permanent bans:</strong> Treated as ongoing enforcement actions and retained for as long as necessary for moderation and enforcement purposes.</li>
                 <li><strong>Hardware identifiers (HWIDs) and connection identifiers (such as IP addresses):</strong> Retained where necessary to enforce bans, prevent ban evasion, and protect the integrity of the service. These identifiers are used solely for enforcement and security purposes, and are not used for marketing, profiling, or advertising.</li>
